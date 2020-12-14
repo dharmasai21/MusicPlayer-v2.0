@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Main2Activity">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/layoutOuter"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/layout_1"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:orientation="horizontal"
+        android:background="#FFFFFF">
+
+        <Button
+            android:id="@+id/EditSongsbutton"
+            android:layout_width="134dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="10dp"
+            android:layout_marginEnd="222dp"
+            android:layout_marginRight="222dp"
+            android:layout_marginTop="10dp"
+            android:background="#FFFFFF"
+            android:text="Select"
+            android:textSize="12sp" />
+
+        <ImageButton
+            android:id="@+id/DeleteSongsbutton"
+            android:layout_width="58dp"
+            android:layout_height="47dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="10dp"
+            android:layout_marginEnd="38dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="38dp"
+            android:layout_marginStart="-50dp"
+            android:layout_marginTop="10dp"
+            android:background="#FFFFFF"
+            android:src="@drawable/ic_delete"
+            android:text="Delete"
+            android:textSize="12sp" />
+
+        <Button
+            android:id="@+id/cancelbutton"
+            android:layout_width="105dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="10dp"
+            android:layout_marginEnd="287dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="287dp"
+            android:layout_marginStart="-50dp"
+            android:layout_marginTop="10dp"
+            android:background="#FFFFFF"
+            android:text="Cancel"
+            android:textSize="12sp" />
+
+        <Button
+            android:id="@+id/playAllButton"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginBottom="8dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="39dp"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="7dp"
+            android:background="#FFFFFF"
+            android:text="play all"
+            android:textSize="12sp" />
+
+        <Button
+            android:id="@+id/playSelectedButton"
+            android:layout_width="123dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginBottom="9dp"
+            android:layout_marginEnd="143dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="39dp"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="7dp"
+            android:background="#FFFFFF"
+            android:text="play selected"
+            android:textSize="12sp"
+            />
+
+    </RelativeLayout>
+
+</LinearLayout>
+</ScrollView>

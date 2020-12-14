@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FFFFFF"
+    tools:context=".MusicPlaying">
+
+    <RelativeLayout
+        android:id="@+id/imagelayout"
+        android:layout_width="match_parent"
+        android:layout_height="323dp"
+        android:contentDescription="@string/button_name1">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="312dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="15dp"
+            android:contentDescription="@string/button_name1"
+            android:src="@drawable/music9" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/seekbarlayout"
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:layout_above="@+id/controls"
+        android:contentDescription="@string/button_name1">
+
+
+        <SeekBar
+            android:id="@+id/seekBar"
+            android:layout_width="match_parent"
+            android:layout_height="34dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="43dp"
+            android:contentDescription="@string/button_name1"
+
+            />
+
+        <TextView
+            android:id="@+id/texttitle"
+            android:layout_width="352dp"
+            android:layout_height="54dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="85dp"
+            android:layout_marginEnd="24dp"
+            android:layout_marginLeft="21dp"
+            android:layout_marginRight="24dp"
+            android:layout_marginStart="21dp"
+            android:contentDescription="@string/button_name1"
+            android:gravity="center_horizontal"
+            android:hint="Song Title"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/currtime"
+            android:layout_width="72dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="21dp"
+            android:layout_marginEnd="318dp"
+            android:layout_marginLeft="21dp"
+            android:layout_marginRight="318dp"
+            android:layout_marginStart="21dp"
+            android:contentDescription="@string/button_name1"
+            android:gravity="center_horizontal"
+            android:hint="--:--"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/totaltime"
+            android:layout_width="72dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="21dp"
+            android:layout_marginEnd="19dp"
+            android:layout_marginLeft="21dp"
+            android:layout_marginRight="19dp"
+            android:layout_marginStart="21dp"
+            android:contentDescription="@string/default_time"
+            android:gravity="center_horizontal"
+            android:hint="@string/default_time"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/controls"
+        android:layout_width="match_parent"
+        android:layout_height="115dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="3dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginRight="0dp"
+        android:contentDescription="@string/button_name1">
+
+        <ImageButton
+            android:id="@+id/play"
+            android:layout_width="67dp"
+            android:layout_height="62dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="28dp"
+            android:layout_marginEnd="167dp"
+            android:layout_marginRight="167dp"
+            android:background="#FFFFFF"
+            android:contentDescription="@string/button_name1"
+            android:src="@drawable/ic_baseline_play_arrow_24" />
+
+        <ImageButton
+            android:id="@+id/pause"
+            android:layout_width="67dp"
+            android:layout_height="67dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="23dp"
+            android:layout_marginEnd="166dp"
+            android:layout_marginRight="166dp"
+            android:background="#FFFFFF"
+            android:contentDescription="@string/button_name1"
+            android:src="@drawable/ic_baseline_pause_24" />
+
+        <ImageButton
+            android:id="@+id/forward5secs"
+            android:layout_width="60dp"
+            android:layout_height="56dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="30dp"
+            android:layout_marginEnd="96dp"
+            android:layout_marginRight="96dp"
+            android:background="#FFFFFF"
+
+            android:contentDescription="@string/button_name1"
+            android:src="@drawable/ic_5sec_forward_24" />
+
+        <ImageButton
+            android:layout_width="60dp"
+            android:layout_height="56dp"
+            android:id="@+id/rewind5secs"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="32dp"
+            android:layout_marginEnd="253dp"
+            android:layout_marginRight="253dp"
+            android:background="#FFFFFF"
+            android:src="@drawable/ic_5sec_rewind"
+            android:contentDescription="@string/button_name1"/>
+
+        <ImageButton
+            android:id="@+id/prevsong"
+            android:layout_width="60dp"
+            android:layout_height="56dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="31dp"
+            android:layout_marginEnd="336dp"
+            android:layout_marginRight="336dp"
+            android:background="#FFFFFF"
+            android:contentDescription="@string/button_name1"
+            android:src="@drawable/ic_baseline_chevron_left" />
+
+        <ImageButton
+            android:id="@+id/nextsong"
+            android:layout_width="60dp"
+            android:layout_height="56dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="29dp"
+            android:layout_marginEnd="22dp"
+            android:layout_marginRight="22dp"
+            android:background="#FFFFFF"
+            android:contentDescription="@string/button_name1"
+            android:src="@drawable/ic_baseline_chevron_right_24" />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>
